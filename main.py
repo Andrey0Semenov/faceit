@@ -43,24 +43,13 @@ class InfoForm(FlaskForm):
 
 
 class FormsClass:
-    pass  # пока один класс для всех функций, тк с каждой разное взаимодействие
-            # Ты можешь создать сколько нужно для каждой функции
+    pass 
 
 
 @app.route('/', methods=['GET'])  # Начальная страница
 def regestranion():
     form = FormsClass()
     return render_template('start_page.html', form=form)
-
-
-# @app.route('/entrance', methods=['POST', 'GET'])  # Страница входа
-# def vhod():
-#     form = FormsClass()
-#     if request.method == 'GET':
-#         return render_template('entrance_page.html', form=form)
-#     elif request.method == 'POST':
-
-#         return redirect('/cabin')
 
 
 @app.route('/login', methods=['GET', 'POST'])
