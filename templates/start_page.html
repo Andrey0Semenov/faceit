@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link
@@ -9,6 +10,12 @@
             integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
             crossorigin="anonymous">
     <link href="{url_for('static', filename='css/style.css')}" rel="stylesheet" type="text/css">
+    <style>
+    body {
+      background-color: #F0E68C
+    }
+     
+    </style>
     <title>faceit.guides</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
         <h1>Faceit</h1>
     </nav>
     <div style="width: 1px; height: 1px; position: absolute; top: 0px; left: 1400px;">
-        <img src="static/images/apartlux.jpg"
+        <img src=""
          alt=" "
          width="100"
          height="70">
@@ -26,12 +33,10 @@
     </div>
 </header>
 <h1 align="center">Сайт - помошник платформы faceit для игры в Counter Strike 2</h1>
-<h2 align="center">Войдите или зарегистрируйтесь</h2>
 <div class="container">
     <h4>Войдите в свой аккаунт</h4>
     <form action="/login" method="get" target="_blank">
     <button type="submit">Вход</button>
-    <! - - Кнопка перехода на страницу входа -->
     </form>
     <br>
     <h4>Или</h4>
@@ -39,34 +44,31 @@
     <h4>Зарегистрируйтесь, если его нет</h4>
     <form action="/reg" method="get" target="_blank">
     <button type="submit">Регистрация</button>
-    <! - - Кнопка перехода на страницу регистрации -->
     </form>
 </div>
 </body>
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
     <div class="container py-4 py-md-5 px-4 px-md-3">
         <div class="row">
-            <div class="col-lg-3 mb-3">
-                <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none footer-brand"
-                    <span class="fs-5">Hotel Chain</span>
-                </a>
-                <ul class="list-unstyled small text-muted">
-                    <li class="mb-2">Созданный сайт поможет людям забронировать номер в отеле, принадлежащему сети ApartLux.
-                            После регистрации/входа в личный кабинет, на главной страннице будет высвечено нахождение 10 отелей.
-                            Пользователь может выбрать любой для своего проживания.
-                            После того, как отель будет определен, пользователь попадет на страницу для выбора номера
-                            и даты проживания в нем, эти данные будут сохранены в базу данных.
-                            В личном кабинете можно будет аннулировать бронь.
-                    </li>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Ссылка на бренд хозяина</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-link"><a href="https://www.off---white.com/" target="_blank">off-white</a></li>
                 </ul>
             </div>
             <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                <h5>Ссылка на GitHub с проектом</h5>
+                <h5>Ссылка на спонсоров</h5>
                 <ul class="list-unstyled">
-                    <li class="nav-link"><a href="https://github.com/nastyas1/hotel-chain" target="_blank">Ссылка</a></li>
+                    <li class="nav-link"><a href="" target="_blank">Пасека</a></li>
                 </ul>
             </div>
+             <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                <h5>Ссылка на спонсоров</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-link"><a href="https://www.rosagroleasing.ru/catalog/item/188882/?utm_source=yandex&utm_medium=cpc&utm_campaign=igcs_ral_product_promo-tractor_rf&utm_content=cid_97227735|gid_5299429466|adid_15122153275|phid_47494407257|ntw_search|src_none|geo_216|dev_desktop|pos_premium18|matchtype_&calltouch_tm=yd_c:97227735_gb:5299429466_ad:15122153275_ph:47494407257_st:search_pt:premium_p:18_s:none_dt:desktop_reg:216_ret:47494407257_apt:none&yclid=11472660904290549759" target="_blank">Трактор</a></li>
+                </ul>
             </div>
+            
         </div>
     </div>
 </footer>
